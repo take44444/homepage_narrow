@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: homepage-nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: homepage-nginx
+  template:
+    metadata:
+      labels:
+        app: homepage-nginx
+    spec:
+      containers:
+      - image: homepage-nginx
+        name: homepage-nginx
+        imagePullPolicy: Never
+        ports:
+        - containerPort: 80
