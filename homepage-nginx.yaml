@@ -13,8 +13,7 @@ spec:
         app: homepage-nginx
     spec:
       containers:
-      - image: homepage-nginx
+      - image: take44444/homepage-nginx
         name: homepage-nginx
-        imagePullPolicy: Never
         ports:
         - containerPort: 80

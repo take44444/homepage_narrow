@@ -5,5 +5,5 @@ docker build \
     --force-rm \
     --pull \
     --rm \
-    --tag homepage-nginx \
+    --tag take44444/homepage-nginx \
     .
